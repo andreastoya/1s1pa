@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class G - Student Web Project Showcase</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <i data-feather="code" class="logo-icon"></i>
+          <span class="logo-text">1S1PA<span class="highlight">Class G</span></span>
+        </div>
+        
+        <nav class="desktop-nav">
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#course" class="nav-link">Course Info</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        
+        <div class="mobile-menu-btn">
+          <button id="mobile-menu-toggle">
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+        
+        <div class="cta-button desktop-only">
+          <a href="#submit" class="button">Submit Project</a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="container">
+        <nav class="mobile-nav">
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#course" class="nav-link">Course Info</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <div class="cta-button mobile-cta">
+            <a href="#submit" class="button">Submit Project</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-pattern"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span>Showcasing student</span>
+              <span class="accent">web development talent</span>
+            </h1>
+            <p class="hero-description">
+              Explore amazing static website projects created by our talented web development students. From stunning portfolios to innovative web applications.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="button button-secondary">View Projects</a>
+              <a href="#course" class="button button-secondary">Learn More</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Students working on web development projects">
+              <div class="play-button">
+                <button type="button" aria-label="Play video">
+                  <i data-feather="play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Student Projects</h2>
+          <p class="section-description">
+            Browse through our collection of outstanding web projects created by students during their web development journey.
+          </p>
+        </div>
+        
+        <div class="filter-buttons">
+          <button class="filter-button active" data-category="All">All</button>
+          <button class="filter-button" data-category="E-commerce">E-commerce</button>
+          <button class="filter-button" data-category="Portfolio">Portfolio</button>
+          <button class="filter-button" data-category="Blog">Blog</button>
+          <button class="filter-button" data-category="Landing Page">Landing Page</button>
+        </div>
+        
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="E-commerce">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1526925539332-aa3b66e35444?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="EcoShop">
+              <span class="project-category category-ecommerce">E-commerce</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <h3 class="project-title">BulukumbaInfo</h3>
+                <div class="project-rating">
+                  <div class="stars">
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                  </div>
+                  <span>5.0</span>
+                </div>
+              </div>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dolores.</p>
+              <div class="project-footer">
+                <div class="student-info">
+                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Student: Azhyla.">
+                  <span>Azhyla</span>
+                </div>
+                <a href="#" class="view-project">
+                  View Project
+                  <i data-feather="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card" data-category="Portfolio">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1545665277-5937489579f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="PixelPerfect">
+              <span class="project-category category-portfolio">Portfolio</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <h3 class="project-title">Web Sekolah</h3>
+                <div class="project-rating">
+                  <div class="stars">
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                  </div>
+                  <span>5.0</span>
+                </div>
+              </div>
+              <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ad.</p>
+              <div class="project-footer">
+                <div class="student-info">
+                  <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Student: Muh. Akbar.">
+                  <span>Muh. Akbar.</span>
+                </div>
+                <a href="#" class="view-project">
+                  View Project
+                  <i data-feather="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card" data-category="Blog">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="TechTalk">
+              <span class="project-category category-blog">Blog</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <h3 class="project-title">TechTalk</h3>
+                <div class="project-rating">
+                  <div class="stars">
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star"></i>
+                  </div>
+                  <span>4.0</span>
+                </div>
+              </div>
+              <p class="project-description">A technology news blog with clean typography and responsive article layouts.</p>
+              <div class="project-footer">
+                <div class="student-info">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Student: Sarah W.">
+                  <span>By Sarah W.</span>
+                </div>
+                <a href="#" class="view-project">
+                  View Project
+                  <i data-feather="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 4 -->
+          <div class="project-card" data-category="Landing Page">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="FitLife">
+              <span class="project-category category-landing">Landing Page</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <h3 class="project-title">FitLife</h3>
+                <div class="project-rating">
+                  <div class="stars">
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star half"></i>
+                  </div>
+                  <span>4.5</span>
+                </div>
+              </div>
+              <p class="project-description">A fitness application landing page with animated features and subscription form.</p>
+              <div class="project-footer">
+                <div class="student-info">
+                  <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Student: Marcus L.">
+                  <span>By Marcus L.</span>
+                </div>
+                <a href="#" class="view-project">
+                  View Project
+                  <i data-feather="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 5 -->
+          <div class="project-card" data-category="E-commerce">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1561715276-a2d087060f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="QuickBite">
+              <span class="project-category category-ecommerce">E-commerce</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <h3 class="project-title">QuickBite</h3>
+                <div class="project-rating">
+                  <div class="stars">
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star"></i>
+                  </div>
+                  <span>4.0</span>
+                </div>
+              </div>
+              <p class="project-description">A food delivery service with interactive menu selection and order tracking.</p>
+              <div class="project-footer">
+                <div class="student-info">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Student: David K.">
+                  <span>By David K.</span>
+                </div>
+                <a href="#" class="view-project">
+                  View Project
+                  <i data-feather="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 6 -->
+          <div class="project-card" data-category="Landing Page">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="ConsultPro">
+              <span class="project-category category-landing">Landing Page</span>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <h3 class="project-title">ConsultPro</h3>
+                <div class="project-rating">
+                  <div class="stars">
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                    <i data-feather="star" class="star filled"></i>
+                  </div>
+                  <span>5.0</span>
+                </div>
+              </div>
+              <p class="project-description">A professional consulting services website with testimonials and service showcase.</p>
+              <div class="project-footer">
+                <div class="student-info">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Student: Jessica T.">
+                  <span>By Jessica T.</span>
+                </div>
+                <a href="#" class="view-project">
+                  View Project
+                  <i data-feather="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="load-more">
+          <button id="load-more-btn" class="button button-outline">
+            Load More Projects
+            <i data-feather="refresh-cw" class="icon-spin"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">About Our Web Development Program</h2>
+            <p class="section-description">
+              Our web development program is designed to provide students with practical, hands-on experience building real-world websites and web applications.
+            </p>
+            <div class="feature-list">
+              <div class="feature">
+                <div class="feature-icon">
+                  <i data-feather="code"></i>
+                </div>
+                <div class="feature-content">
+                  <h3 class="feature-title">Practical Approach</h3>
+                  <p class="feature-description">
+                    Students learn by building real projects, not just following tutorials. Every student completes 5+ portfolio-worthy projects.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="feature">
+                <div class="feature-icon">
+                  <i data-feather="users"></i>
+                </div>
+                <div class="feature-content">
+                  <h3 class="feature-title">Industry Mentors</h3>
+                  <p class="feature-description">
+                    Our instructors are industry professionals who bring real-world experience into the classroom.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="feature">
+                <div class="feature-icon">
+                  <i data-feather="award"></i>
+                </div>
+                <div class="feature-content">
+                  <h3 class="feature-title">Career Ready</h3>
+                  <p class="feature-description">
+                    Graduates leave with a professional portfolio, GitHub profile, and the skills needed to succeed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-images">
+            <div class="image-grid">
+              <div class="main-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Students collaborating on web development projects">
+              </div>
+              <div class="small-images">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Student coding at a computer">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Student presenting their web project">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Info Section -->
+    <section id="course" class="course-info">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Course Information</h2>
+          <p class="section-description">
+            Everything you need to know about our web development program and how it works.
+          </p>
+        </div>
+        
+        <div class="course-modules">
+          <!-- Module 1 -->
+          <div class="course-card">
+            <div class="card-icon">
+              <i data-feather="code"></i>
+            </div>
+            <h3 class="card-title">HTML & CSS Foundations</h3>
+            <p class="card-description">Learn the building blocks of web development and create your first responsive websites.</p>
+            <div class="card-features">
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>Semantic HTML5</span>
+              </div>
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>CSS Grid & Flexbox</span>
+              </div>
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>Responsive Design</span>
+              </div>
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>CSS Animations</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="duration">
+                <i data-feather="calendar"></i>
+                <span>4 weeks</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Module 2 -->
+          <div class="course-card">
+            <div class="card-icon">
+              <i data-feather="git-branch"></i>
+            </div>
+            <h3 class="card-title">JavaScript Essentials</h3>
+            <p class="card-description">Master JavaScript fundamentals and add interactivity to your web projects.</p>
+            <div class="card-features">
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>Modern JavaScript (ES6+)</span>
+              </div>
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>DOM Manipulation</span>
+              </div>
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>Event Handling</span>
+              </div>
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>Fetch API & Promises</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="duration">
+                <i data-feather="calendar"></i>
+                <span>5 weeks</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Module 3 -->
+          <div class="course-card">
+            <div class="card-icon">
+              <i data-feather="zap"></i>
+            </div>
+            <h3 class="card-title">Advanced Web Projects</h3>
+            <p class="card-description">Build complete, production-ready websites with advanced features and techniques.</p>
+            <div class="card-features">
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>API Integration</span>
+              </div>
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>Local Storage</span>
+              </div>
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>Performance Optimization</span>
+              </div>
+              <div class="feature-item">
+                <i data-feather="check-circle"></i>
+                <span>Deployment & Hosting</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="duration">
+                <i data-feather="calendar"></i>
+                <span>6 weeks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="course-cta">
+          <div class="cta-content">
+            <h3 class="cta-title">Ready to showcase your own project?</h3>
+            <p class="cta-description">
+              Join our web development program and build amazing websites like the ones featured here. Our next cohort starts soon!
+            </p>
+            <div class="cta-buttons">
+              <a href="#" class="button">Enroll Now</a>
+              <a href="#" class="button button-outline">Request Information</a>
+            </div>
+          </div>
+          <div class="cohort-info">
+            <div class="info-card">
+              <h4 class="info-title">Next Cohort Details</h4>
+              <ul class="info-list">
+                <li class="info-item">
+                  <i data-feather="calendar"></i>
+                  <div>
+                    <span class="item-label">Start Date:</span>
+                    <p>September 15, 2023</p>
+                  </div>
+                </li>
+                <li class="info-item">
+                  <i data-feather="clock"></i>
+                  <div>
+                    <span class="item-label">Schedule:</span>
+                    <p>Mon & Wed, 6-9pm</p>
+                  </div>
+                </li>
+                <li class="info-item">
+                  <i data-feather="map-pin"></i>
+                  <div>
+                    <span class="item-label">Location:</span>
+                    <p>Online & In-person options</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header light">
+          <h2 class="section-title">What Our Students Say</h2>
+          <p class="section-description">
+            Hear from some of our successful graduates about their experience.
+          </p>
+        </div>
+        
+        <div class="testimonial-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="card-rating">
+              <div class="stars">
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+              </div>
+              <span>5.0</span>
+            </div>
+            <p class="testimonial-quote">
+              "This program completely transformed my career. I went from knowing nothing about web development to building my own client websites in just a few months."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Michael Robinson">
+              <div class="author-info">
+                <h4 class="author-name">Michael Robinson</h4>
+                <p class="author-title">Freelance Developer</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="card-rating">
+              <div class="stars">
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+              </div>
+              <span>5.0</span>
+            </div>
+            <p class="testimonial-quote">
+              "The hands-on approach of this program is what sets it apart. I learned by building real projects, which I was able to showcase in my portfolio and land a job."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Alicia Garcia">
+              <div class="author-info">
+                <h4 class="author-name">Alicia Garcia</h4>
+                <p class="author-title">Frontend Developer</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="card-rating">
+              <div class="stars">
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star filled"></i>
+                <i data-feather="star" class="star half"></i>
+              </div>
+              <span>4.5</span>
+            </div>
+            <p class="testimonial-quote">
+              "The instructors were amazing - always there to help and providing valuable industry insights. What I learned went far beyond just coding skills."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="Thomas Wilson">
+              <div class="author-info">
+                <h4 class="author-name">Thomas Wilson</h4>
+                <p class="author-title">UX/UI Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-description">
+              Have questions about our web development program or want to learn more about submitting your project? Get in touch with us.
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i data-feather="mail"></i>
+                </div>
+                <div class="method-details">
+                  <h3 class="method-title">Email Us</h3>
+                  <p class="method-value">
+                    <a href="mailto:info@webprojectshub.edu">info@webprojectshub.edu</a>
+                  </p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i data-feather="phone"></i>
+                </div>
+                <div class="method-details">
+                  <h3 class="method-title">Call Us</h3>
+                  <p class="method-value">
+                    <a href="tel:+15555551234">(555) 555-1234</a>
+                  </p>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i data-feather="map-pin"></i>
+                </div>
+                <div class="method-details">
+                  <h3 class="method-title">Visit Us</h3>
+                  <p class="method-value">
+                    123 Tech Campus Drive<br>
+                    San Francisco, CA 94107
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <h3 class="social-title">Follow Us</h3>
+              <div class="social-icons">
+                <a href="#" class="social-icon">
+                  <i data-feather="twitter"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i data-feather="facebook"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i data-feather="instagram"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i data-feather="linkedin"></i>
+                </a>
+                <a href="#" class="social-icon">
+                  <i data-feather="github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="submit" class="contact-form-container">
+            <div class="form-card">
+              <h3 class="form-title">Send Us a Message</h3>
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject" required>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Project Submission">Project Submission</option>
+                    <option value="Course Information">Course Information</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="How can we help you?" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                  <input type="checkbox" id="newsletter" name="newsletter">
+                  <div>
+                    <label for="newsletter">Subscribe to newsletter</label>
+                    <p class="checkbox-description">Get the latest updates about our courses and events.</p>
+                  </div>
+                </div>
+                
+                <button type="submit" class="button button-block">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-branding">
+          <div class="logo">
+            <i data-feather="code" class="logo-icon"></i>
+            <span class="logo-text">WebProjects<span class="highlight">Hub</span></span>
+          </div>
+          <p class="footer-description">
+            Showcasing the best student web development projects and helping aspiring developers build their skills.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-column">
+            <h3 class="column-title">Quick Links</h3>
+            <ul class="link-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#course">Course Info</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-column">
+            <h3 class="column-title">Resources</h3>
+            <ul class="link-list">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-column">
+            <h3 class="column-title">Newsletter</h3>
+            <p class="newsletter-description">Stay up-to-date with our latest projects and course offerings.</p>
+            <form class="newsletter-form">
+              <div class="form-group">
+                <input type="email" id="footer-email" placeholder="your.email@example.com" required>
+                <button type="submit" class="newsletter-button">
+                  <i data-feather="send"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; <span id="current-year"></span> 1S1PA Class G. All rights reserved.
+        </div>
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Code of Conduct</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Feather Icons
+    document.addEventListener('DOMContentLoaded', function() {
+      feather.replace();
+      
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      mobileMenuBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+        const menuIcon = mobileMenuBtn.querySelector('i');
+        if (mobileMenu.classList.contains('active')) {
+          menuIcon.setAttribute('data-feather', 'x');
+        } else {
+          menuIcon.setAttribute('data-feather', 'menu');
+        }
+        feather.replace();
+      });
+      
+      // Close mobile menu when clicking a link
+      document.querySelectorAll('.mobile-nav .nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.remove('active');
+          const menuIcon = mobileMenuBtn.querySelector('i');
+          menuIcon.setAttribute('data-feather', 'menu');
+          feather.replace();
+        });
+      });
+      
+      // Header scroll effect
+      const header = document.querySelector('.sticky-header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 10) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      
+      // Project filtering
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const projectCards = document.querySelectorAll('.project-card');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          const category = this.getAttribute('data-category');
+          
+          projectCards.forEach(card => {
+            if (category === 'All' || card.getAttribute('data-category') === category) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+      
+      // Load more projects button (example functionality)
+      const loadMoreBtn = document.getElementById('load-more-btn');
+      
+      loadMoreBtn.addEventListener('click', function() {
+        // Add spinner effect
+        this.classList.add('loading');
+        
+        // Simulate loading delay
+        setTimeout(() => {
+          // Here you would typically load more projects from server
+          // For demo, just hide the button after "loading"
+          this.classList.remove('loading');
+          this.style.display = 'none';
+        }, 1500);
+      });
+      
+      // Contact form submission (example functionality)
+      const contactForm = document.getElementById('contact-form');
+      
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        const newsletter = document.getElementById('newsletter').checked;
+        
+        // Here you would typically send data to server
+        // For demo, just show success message and reset form
+        alert(`Thanks ${name}! Your message has been sent.`);
+        contactForm.reset();
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80, // Account for fixed header
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
